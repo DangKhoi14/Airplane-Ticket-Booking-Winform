@@ -4,23 +4,56 @@ namespace AirTicketBookingWindowForm
 {
     public partial class LoginForm : Form
     {
+        public static LoginForm OriginalForm;
+        public List<Customer> CustomerList;
+        public List<User> UserList;
+        public List<FlightInfo> FlightInfoList;
+        public List<FlightRegistration> FlightRegistrations;
+        public string StartupPath;
+        public bool ResetLogin;
+
         public LoginForm()
         {
             InitializeComponent();
+            OriginalForm = this;
+            StartupPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+            CustomerList = new List<Customer>();
+            //CustomerList.Add(new Customer("Dora", DateTime.Now, Image.FromFile(StartupPath + "\\Images\\Doraemon.jpg"), "TestPP", "TestNationality"));
+            UserList = new List<User>();
+            UserList.Add(new User("ID0", "Testing", "Testing"));
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text == "TestingUserName" && txtPassword.Text == "TestingPassword")
+            if (txtUserName.Text.Length == 0)
             {
-                new AirTicketBooking().Show();
-                this.Hide();
+                MessageBox.Show("Please enter user name !", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtUserName.Focus();
+                return;
+            }
+            if (txtPassword.Text.Length == 0)
+            {
+                MessageBox.Show("Please enter password !", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPassword.Focus();
+                return;
+            }
+
+            User SpecificOne = UserList.Find(x => (x.UserName == txtUserName.Text) && (x.Password == txtPassword.Text));
+            if (SpecificOne == null)
+            {
+                MessageBox.Show("Username and Password are not exist. \nPlease reinput or register a new one.",
+                    "User Not Found", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPassword.Clear();
+                txtPassword.Focus();
             }
             else
             {
-                MessageBox.Show("The User Name or Password is incorrect, try again!");
-                txtPassword.Clear();
-                txtPassword.Focus();
+                AirTicketBooking obj = new AirTicketBooking();
+                User currentUser = UserList.Find(x => (x.UserName == txtUserName.Text) && (x.Password == txtPassword.Text));
+                //obj.SetCurrentUser(currentUser);
+                this.Hide();
+                obj.Show();
             }
         }
 

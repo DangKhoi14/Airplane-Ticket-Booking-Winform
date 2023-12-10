@@ -16,5 +16,21 @@ namespace AirTicketBookingWindowForm
         {
             InitializeComponent();
         }
+
+        private void AirTicketBooking_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            new LoginForm().Show();
+            this.Close();
+        }
     }
 }

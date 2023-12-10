@@ -49,10 +49,9 @@
             // picLogo
             // 
             picLogo.Image = (Image)resources.GetObject("picLogo.Image");
-            picLogo.Location = new Point(171, 40);
-            picLogo.Margin = new Padding(3, 4, 3, 4);
+            picLogo.Location = new Point(150, 30);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(229, 133);
+            picLogo.Size = new Size(200, 100);
             picLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
@@ -61,9 +60,9 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Consolas", 24F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            lblTitle.Location = new Point(224, 196);
+            lblTitle.Location = new Point(196, 147);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(130, 47);
+            lblTitle.Size = new Size(107, 37);
             lblTitle.TabIndex = 1;
             lblTitle.Tag = "";
             lblTitle.Text = "LOGIN";
@@ -72,10 +71,9 @@
             // AccountPictureBox
             // 
             AccountPictureBox.Image = (Image)resources.GetObject("AccountPictureBox.Image");
-            AccountPictureBox.Location = new Point(57, 293);
-            AccountPictureBox.Margin = new Padding(3, 4, 3, 4);
+            AccountPictureBox.Location = new Point(50, 220);
             AccountPictureBox.Name = "AccountPictureBox";
-            AccountPictureBox.Size = new Size(34, 40);
+            AccountPictureBox.Size = new Size(30, 30);
             AccountPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             AccountPictureBox.TabIndex = 2;
             AccountPictureBox.TabStop = false;
@@ -83,19 +81,17 @@
             // panel1
             // 
             panel1.BackColor = Color.Gray;
-            panel1.Location = new Point(57, 340);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(50, 255);
             panel1.Name = "panel1";
-            panel1.Size = new Size(457, 1);
+            panel1.Size = new Size(400, 1);
             panel1.TabIndex = 3;
             // 
             // PasswordPictureBox
             // 
             PasswordPictureBox.Image = (Image)resources.GetObject("PasswordPictureBox.Image");
-            PasswordPictureBox.Location = new Point(57, 383);
-            PasswordPictureBox.Margin = new Padding(3, 4, 3, 4);
+            PasswordPictureBox.Location = new Point(50, 287);
             PasswordPictureBox.Name = "PasswordPictureBox";
-            PasswordPictureBox.Size = new Size(34, 40);
+            PasswordPictureBox.Size = new Size(30, 30);
             PasswordPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             PasswordPictureBox.TabIndex = 2;
             PasswordPictureBox.TabStop = false;
@@ -103,10 +99,9 @@
             // panel2
             // 
             panel2.BackColor = Color.Gray;
-            panel2.Location = new Point(57, 429);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(50, 322);
             panel2.Name = "panel2";
-            panel2.Size = new Size(457, 1);
+            panel2.Size = new Size(400, 1);
             panel2.TabIndex = 3;
             // 
             // btnLogIn
@@ -115,10 +110,9 @@
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
             btnLogIn.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btnLogIn.Location = new Point(171, 480);
-            btnLogIn.Margin = new Padding(3, 4, 3, 4);
+            btnLogIn.Location = new Point(150, 360);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(229, 33);
+            btnLogIn.Size = new Size(200, 25);
             btnLogIn.TabIndex = 4;
             btnLogIn.Text = "Login";
             btnLogIn.UseVisualStyleBackColor = false;
@@ -129,10 +123,9 @@
             btnCancel.FlatAppearance.BorderSize = 0;
             btnCancel.FlatStyle = FlatStyle.Flat;
             btnCancel.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            btnCancel.Location = new Point(240, 533);
-            btnCancel.Margin = new Padding(3, 4, 3, 4);
+            btnCancel.Location = new Point(210, 400);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(91, 33);
+            btnCancel.Size = new Size(80, 25);
             btnCancel.TabIndex = 4;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
@@ -143,10 +136,9 @@
             btnSignUp.FlatAppearance.BorderSize = 0;
             btnSignUp.FlatStyle = FlatStyle.Flat;
             btnSignUp.Font = new Font("Consolas", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 163);
-            btnSignUp.Location = new Point(472, 620);
-            btnSignUp.Margin = new Padding(3, 4, 3, 4);
+            btnSignUp.Location = new Point(413, 465);
             btnSignUp.Name = "btnSignUp";
-            btnSignUp.Size = new Size(86, 31);
+            btnSignUp.Size = new Size(75, 23);
             btnSignUp.TabIndex = 5;
             btnSignUp.Text = "Sign Up";
             btnSignUp.UseVisualStyleBackColor = true;
@@ -155,9 +147,9 @@
             // lblClearFields
             // 
             lblClearFields.AutoSize = true;
-            lblClearFields.Location = new Point(472, 457);
+            lblClearFields.Location = new Point(413, 343);
             lblClearFields.Name = "lblClearFields";
-            lblClearFields.Size = new Size(85, 20);
+            lblClearFields.Size = new Size(67, 15);
             lblClearFields.TabIndex = 6;
             lblClearFields.Text = "Clear Fields";
             lblClearFields.Click += lblClearFields_Click;
@@ -168,11 +160,10 @@
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
             txtPassword.ForeColor = Color.Black;
-            txtPassword.Location = new Point(114, 381);
-            txtPassword.Margin = new Padding(3, 4, 3, 4);
+            txtPassword.Location = new Point(100, 286);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(400, 40);
+            txtPassword.Size = new Size(350, 30);
             txtPassword.TabIndex = 7;
             txtPassword.TextChanged += txtPassword_TextChanged;
             // 
@@ -182,19 +173,18 @@
             txtUserName.BorderStyle = BorderStyle.None;
             txtUserName.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
             txtUserName.ForeColor = Color.Black;
-            txtUserName.Location = new Point(114, 293);
-            txtUserName.Margin = new Padding(3, 4, 3, 4);
+            txtUserName.Location = new Point(100, 220);
             txtUserName.Multiline = true;
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(400, 40);
+            txtUserName.Size = new Size(350, 30);
             txtUserName.TabIndex = 7;
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(570, 667);
+            ClientSize = new Size(499, 500);
             Controls.Add(txtUserName);
             Controls.Add(txtPassword);
             Controls.Add(lblClearFields);
@@ -208,7 +198,7 @@
             Controls.Add(lblTitle);
             Controls.Add(picLogo);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
