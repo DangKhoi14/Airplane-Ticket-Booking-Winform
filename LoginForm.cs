@@ -21,7 +21,7 @@ namespace AirTicketBookingWindowForm
             CustomerList = new List<Customer>();
             //CustomerList.Add(new Customer("Dora", DateTime.Now, Image.FromFile(StartupPath + "\\Images\\Doraemon.jpg"), "TestPP", "TestNationality"));
             UserList = new List<User>();
-            UserList.Add(new User("ID0", "Testing", "Testing"));
+            UserList.Add(new User("Testing", "Testing", "IDzero"));
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
