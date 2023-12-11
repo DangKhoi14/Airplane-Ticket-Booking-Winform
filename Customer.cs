@@ -43,31 +43,32 @@ namespace AirTicketBookingWindowForm
     {
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string CustomerID { get; set; }
 
         public User()
         {
             UserName = "N/A";
         }
 
-        public User(string UserName, string Password, string CustomerID)
+        public User(string UserName, string Password)
         {
             this.UserName = UserName;
             this.Password = Password;
-            this.CustomerID = CustomerID;
         }
     }
 
     public class FlightInfo
     {
         public string FlightID { get; }
+        public string Start { get; set; }
+        public string Goal {  get; set; }
         public DateTime TimeDepart { get; set; }
         public DateTime TimeArrival { get; set; }
         public string FlightType { get; set; }
-        public int NumCredit { get; set; }
 
         public FlightInfo()
         {
+            TimeDepart = DateTime.Now;
+            FlightType = "Economy";
             FlightID = GenerateFlightID();
         }
 
@@ -77,12 +78,13 @@ namespace AirTicketBookingWindowForm
             return $"{FlightType}{formattedTimeDepart}";
         }
 
-        public FlightInfo(DateTime TimeDepart, DateTime TimeArrival, string FlightType, int NumCredit)
+        public FlightInfo(string Start, string Goal, DateTime TimeDepart, DateTime TimeArrival, string FlightType)
         {
+            this.Start = Start;
+            this.Goal = Goal;
             this.TimeDepart = TimeDepart;
             this.TimeArrival = TimeArrival;
             this.FlightType = FlightType;
-            this.NumCredit = NumCredit;
             FlightID = GenerateFlightID();
         }
     }
@@ -102,11 +104,6 @@ namespace AirTicketBookingWindowForm
         {
             this.CustomerID = CustomerID;
             FlightEnrollList = new List<FlightInfo>();
-        }
-
-        public int CalculateSumCredit()
-        {
-            return FlightEnrollList.Sum(x => x.NumCredit);
         }
     }
 }

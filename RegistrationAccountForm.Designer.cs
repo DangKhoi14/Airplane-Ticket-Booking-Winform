@@ -49,6 +49,12 @@
             lblClearFields = new Label();
             lblLogIn = new Label();
             label6 = new Label();
+            txtPassword = new TextBox();
+            label7 = new Label();
+            txtUserName = new TextBox();
+            label8 = new Label();
+            txtConfirmPassword = new TextBox();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picCustomerAvatar).BeginInit();
             SuspendLayout();
@@ -85,24 +91,24 @@
             // 
             // txtCustomerName
             // 
-            txtCustomerName.Location = new Point(69, 128);
+            txtCustomerName.Location = new Point(111, 250);
             txtCustomerName.Name = "txtCustomerName";
-            txtCustomerName.Size = new Size(382, 23);
+            txtCustomerName.Size = new Size(340, 23);
             txtCustomerName.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label2.Location = new Point(15, 128);
+            label2.Location = new Point(15, 251);
             label2.Name = "label2";
-            label2.Size = new Size(48, 18);
+            label2.Size = new Size(88, 18);
             label2.TabIndex = 4;
-            label2.Text = "Name:";
+            label2.Text = "Full Name:";
             // 
             // dteBirthday
             // 
-            dteBirthday.Location = new Point(101, 165);
+            dteBirthday.Location = new Point(110, 288);
             dteBirthday.Name = "dteBirthday";
             dteBirthday.Size = new Size(219, 23);
             dteBirthday.TabIndex = 5;
@@ -111,7 +117,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label3.Location = new Point(15, 165);
+            label3.Location = new Point(15, 288);
             label3.Name = "label3";
             label3.Size = new Size(80, 18);
             label3.TabIndex = 4;
@@ -121,7 +127,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label4.Location = new Point(15, 202);
+            label4.Location = new Point(15, 325);
             label4.Name = "label4";
             label4.Size = new Size(88, 18);
             label4.TabIndex = 4;
@@ -129,7 +135,7 @@
             // 
             // txtCustomerPassPort
             // 
-            txtCustomerPassPort.Location = new Point(110, 202);
+            txtCustomerPassPort.Location = new Point(110, 325);
             txtCustomerPassPort.Name = "txtCustomerPassPort";
             txtCustomerPassPort.Size = new Size(341, 23);
             txtCustomerPassPort.TabIndex = 6;
@@ -138,7 +144,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label5.Location = new Point(15, 240);
+            label5.Location = new Point(15, 363);
             label5.Name = "label5";
             label5.Size = new Size(104, 18);
             label5.TabIndex = 4;
@@ -146,7 +152,7 @@
             // 
             // txtCustomerNationality
             // 
-            txtCustomerNationality.Location = new Point(125, 240);
+            txtCustomerNationality.Location = new Point(125, 363);
             txtCustomerNationality.Name = "txtCustomerNationality";
             txtCustomerNationality.Size = new Size(326, 23);
             txtCustomerNationality.TabIndex = 6;
@@ -154,7 +160,7 @@
             // picCustomerAvatar
             // 
             picCustomerAvatar.Image = (Image)resources.GetObject("picCustomerAvatar.Image");
-            picCustomerAvatar.Location = new Point(19, 291);
+            picCustomerAvatar.Location = new Point(19, 419);
             picCustomerAvatar.Name = "picCustomerAvatar";
             picCustomerAvatar.Size = new Size(150, 150);
             picCustomerAvatar.SizeMode = PictureBoxSizeMode.Zoom;
@@ -163,7 +169,7 @@
             // 
             // btnBrowser
             // 
-            btnBrowser.Location = new Point(226, 356);
+            btnBrowser.Location = new Point(226, 479);
             btnBrowser.Name = "btnBrowser";
             btnBrowser.Size = new Size(75, 23);
             btnBrowser.TabIndex = 8;
@@ -173,7 +179,7 @@
             // 
             // btnRemove
             // 
-            btnRemove.Location = new Point(325, 356);
+            btnRemove.Location = new Point(325, 479);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(75, 23);
             btnRemove.TabIndex = 8;
@@ -184,7 +190,7 @@
             // rdbCertify
             // 
             rdbCertify.AutoSize = true;
-            rdbCertify.Location = new Point(184, 422);
+            rdbCertify.Location = new Point(184, 545);
             rdbCertify.Name = "rdbCertify";
             rdbCertify.Size = new Size(275, 19);
             rdbCertify.TabIndex = 9;
@@ -198,7 +204,7 @@
             btnRegist.FlatAppearance.BorderSize = 0;
             btnRegist.FlatStyle = FlatStyle.Flat;
             btnRegist.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btnRegist.Location = new Point(50, 468);
+            btnRegist.Location = new Point(50, 591);
             btnRegist.Name = "btnRegist";
             btnRegist.Size = new Size(400, 30);
             btnRegist.TabIndex = 10;
@@ -212,7 +218,7 @@
             btnCancel.FlatAppearance.BorderSize = 0;
             btnCancel.FlatStyle = FlatStyle.Flat;
             btnCancel.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            btnCancel.Location = new Point(200, 504);
+            btnCancel.Location = new Point(200, 627);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(100, 30);
             btnCancel.TabIndex = 10;
@@ -223,7 +229,7 @@
             // lblClearFields
             // 
             lblClearFields.AutoSize = true;
-            lblClearFields.Location = new Point(392, 291);
+            lblClearFields.Location = new Point(392, 414);
             lblClearFields.Name = "lblClearFields";
             lblClearFields.Size = new Size(67, 15);
             lblClearFields.TabIndex = 11;
@@ -234,7 +240,7 @@
             // 
             lblLogIn.AutoSize = true;
             lblLogIn.Font = new Font("Consolas", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            lblLogIn.Location = new Point(438, 519);
+            lblLogIn.Location = new Point(438, 642);
             lblLogIn.Name = "lblLogIn";
             lblLogIn.Size = new Size(48, 17);
             lblLogIn.TabIndex = 12;
@@ -245,18 +251,69 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Consolas", 11.25F, FontStyle.Bold);
-            label6.Location = new Point(15, 272);
+            label6.Location = new Point(15, 395);
             label6.Name = "label6";
             label6.Size = new Size(104, 18);
             label6.TabIndex = 13;
             label6.Text = "Your Avatar:";
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(164, 171);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(287, 23);
+            txtPassword.TabIndex = 3;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label7.Location = new Point(15, 172);
+            label7.Name = "label7";
+            label7.Size = new Size(88, 18);
+            label7.TabIndex = 4;
+            label7.Text = "Password: ";
+            // 
+            // txtUserName
+            // 
+            txtUserName.Location = new Point(111, 133);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(340, 23);
+            txtUserName.TabIndex = 3;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label8.Location = new Point(15, 134);
+            label8.Name = "label8";
+            label8.Size = new Size(88, 18);
+            label8.TabIndex = 4;
+            label8.Text = "User Name:";
+            // 
+            // txtConfirmPassword
+            // 
+            txtConfirmPassword.Location = new Point(164, 211);
+            txtConfirmPassword.Name = "txtConfirmPassword";
+            txtConfirmPassword.Size = new Size(286, 23);
+            txtConfirmPassword.TabIndex = 3;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Consolas", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label9.Location = new Point(14, 212);
+            label9.Name = "label9";
+            label9.Size = new Size(144, 18);
+            label9.TabIndex = 4;
+            label9.Text = "Confirm Password:";
             // 
             // RegistrationAccountForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(500, 550);
+            ClientSize = new Size(500, 680);
             Controls.Add(label6);
             Controls.Add(lblLogIn);
             Controls.Add(lblClearFields);
@@ -272,7 +329,13 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
+            Controls.Add(label8);
+            Controls.Add(label9);
+            Controls.Add(label7);
             Controls.Add(label2);
+            Controls.Add(txtUserName);
+            Controls.Add(txtConfirmPassword);
+            Controls.Add(txtPassword);
             Controls.Add(txtCustomerName);
             Controls.Add(label1);
             Controls.Add(lblTitle);
@@ -311,5 +374,11 @@
         private Label lblClearFields;
         private Label lblLogIn;
         private Label label6;
+        private TextBox txtPassword;
+        private Label label7;
+        private TextBox txtUserName;
+        private Label label8;
+        private TextBox txtConfirmPassword;
+        private Label label9;
     }
 }

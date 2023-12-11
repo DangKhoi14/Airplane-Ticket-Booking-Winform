@@ -21,7 +21,12 @@ namespace AirTicketBookingWindowForm
             CustomerList = new List<Customer>();
             //CustomerList.Add(new Customer("Dora", DateTime.Now, Image.FromFile(StartupPath + "\\Images\\Doraemon.jpg"), "TestPP", "TestNationality"));
             UserList = new List<User>();
-            UserList.Add(new User("Testing", "Testing", "IDzero"));
+            UserList.Add(new User("Testing", "Testing"));
+
+            FlightInfoList = new List<FlightInfo>();
+            FlightInfoList.Add(new FlightInfo("HCM", "HN", DateTime.Now.AddHours(10), DateTime.Now.AddHours(12), "Timberland Airline"));
+
+            ResetLogin = true;
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)

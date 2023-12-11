@@ -72,9 +72,9 @@
             label2.ForeColor = Color.Indigo;
             label2.Location = new Point(348, 50);
             label2.Name = "label2";
-            label2.Size = new Size(166, 27);
+            label2.Size = new Size(150, 27);
             label2.TabIndex = 3;
-            label2.Text = "Registration";
+            label2.Text = "Flights List";
             // 
             // btnConfirm
             // 
@@ -89,6 +89,7 @@
             btnConfirm.TabIndex = 5;
             btnConfirm.Text = "Confirm";
             btnConfirm.UseVisualStyleBackColor = false;
+            btnConfirm.Click += btnConfirm_Click;
             // 
             // btnLogOut
             // 
@@ -144,9 +145,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Constantia", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(78, 52);
+            label1.Location = new Point(85, 52);
             label1.Name = "label1";
             label1.Size = new Size(96, 26);
             label1.TabIndex = 11;
@@ -210,6 +212,7 @@
             nudEconomy.Name = "nudEconomy";
             nudEconomy.Size = new Size(50, 23);
             nudEconomy.TabIndex = 15;
+            nudEconomy.ValueChanged += nudEconomy_ValueChanged;
             // 
             // label6
             // 
@@ -240,6 +243,7 @@
             nudPremiumEconomy.Name = "nudPremiumEconomy";
             nudPremiumEconomy.Size = new Size(50, 23);
             nudPremiumEconomy.TabIndex = 15;
+            nudPremiumEconomy.ValueChanged += nudPremiumEconomy_ValueChanged;
             // 
             // label7
             // 
@@ -270,6 +274,7 @@
             nudBussiness.Name = "nudBussiness";
             nudBussiness.Size = new Size(50, 23);
             nudBussiness.TabIndex = 15;
+            nudBussiness.ValueChanged += nudBussiness_ValueChanged;
             // 
             // label8
             // 
@@ -300,6 +305,7 @@
             nudFirst.Name = "nudFirst";
             nudFirst.Size = new Size(50, 23);
             nudFirst.TabIndex = 15;
+            nudFirst.ValueChanged += nudFirst_ValueChanged;
             // 
             // label9
             // 
